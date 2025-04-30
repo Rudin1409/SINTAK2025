@@ -1,0 +1,104 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  text-align: center;
+  background-color: grey;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  letter-spacing: 3.4px;
+  margin-top: 0px;
+}
+
+h1 span {
+  font-weight: 300;
+}
+.header .teks {
+  margin-top: 0px;
+}
+.header .logo img {
+  width: 150px;
+  margin-bottom: 0px;
+}
+
+.link-link {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 4rem;
+}
+
+.btn-icon {
+  width: 600px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.btn-icon:hover {
+  transform: scale(1.05);
+}
+
+/* Posisi icon Instagram di kiri */
+.btn-icon .icon-left {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+/* Posisi teks tetap di tengah tombol */
+.btn-icon .btn-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 680px) {
+  .btn-icon {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header .logo img {
+    width: 90px;
+    margin-bottom: 0px;
+  }
+  .btn-icon {
+    width: 300px;
+  }
+  h1 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 6px;
+    letter-spacing: 3px;
+    margin-top: 0px;
+  }
+}
